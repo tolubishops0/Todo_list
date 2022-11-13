@@ -1,0 +1,163 @@
+body {
+  padding: 3% 9%;
+  width: 80%;
+}
+
+.App {
+  text-align: center;
+  background-color: lightblue;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font: 62.5% / 1.15 sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+form {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.header__text {
+  text-transform: uppercase;
+  margin-bottom: 2%;
+  padding-top: 2%;
+}
+
+form > input[type="text"] {
+  width: 60%;
+  display: inline-block;
+  padding: 8px 10px 8px 8px;
+
+  font-size: 12px;
+  border-radius: 0;
+  /* -webkit-appearance: none; */
+  border: 0.5px solid transparent;
+  border-right: 0;
+}
+
+form > input[type="submit"] {
+  display: inline-block;
+  padding: 8px 28px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+  background-color: blue;
+  color: #fff;
+}
+
+form > input[type="submit"]:hover {
+  background-color: rgb(41, 41, 250);
+}
+
+form > input[type="text"]:focus {
+  outline: 0.1px solid blue;
+  background-color: white;
+  /* box-shadow: 10px 0px 35px 0px rgba(0,0,0,0.45);
+-webkit-box-shadow: 0px 0px 335px 51px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 0px 335px 51px rgba(0,0,0,0.45); */
+}
+
+.todo-list__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 14%;
+  align-items: center;
+}
+
+input.input-checkbox {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.todo-list {
+  padding: 3% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-list > label {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.todo__delete > button {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 0;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.todo__delete > button:hover {
+  background-color: rgb(245, 29, 29);
+}
+
+.underline {
+  width: 71.5%;
+  margin-right: 117px;
+}
+
+.todo__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 15%;
+  align-items: center;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.todo__status > ul {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.todo__status > ul > li:hover {
+  color: rgb(43, 41, 41);
+}
+
+.show {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 12% 12%;
+}
+
+.hide {
+  border: none;
+  padding: 0;
+}
+
+.todo-right__footer {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-right__footer > span > ion-icon {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+}
